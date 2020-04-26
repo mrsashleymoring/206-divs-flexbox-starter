@@ -97,15 +97,16 @@ textarea {
 
 
 html {
-  background-color: #222222;
+  background-color: teal;
   height: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   padding: 2em;
   font-size: 1em;
   height: 100%;
+  color: white;
 }
 
 .wrapper {
@@ -113,25 +114,77 @@ body {
   font-weight: 700;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header,
+footer {
+    height: 100px;
+    width: 100%;
+}
+
+main {
+    height: 400px;
+    width: 100%;
+    background-image: url('../img/sunglasses-sand.jpg');
+    background-position: center;
+    background-size: cover;
+    color: black;
+    padding: 1em;
+}
+
+header,
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main{
+    align-items: flex-start;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    border-bottom: #999 solid 1px;
+    border-top: #999 solid 1px;
 }
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: #fff;
+  background-color: teal;
   line-height: 1.5em;
-  font-size: 1.2em;
   height: 250px;
   display: flex;
   width: 30%;
   justify-content: center;
   align-items: center;
-  padding: 1.25em;
-  flex-wrap: nowrap;
+  padding: .5em;
 }
 
-.div-2, .div-3 {
-    border-left: #999 solid 1px;
+h1 {
+    font-size: 3.5em;
 }
+
+h1 span{
+    font-family: 'Great Vibes', cursive;
+    font-size: 1em;
+    color: black;
+}
+
 
 
 
